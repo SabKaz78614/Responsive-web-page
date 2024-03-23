@@ -1,0 +1,290 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+
+.nav{
+    width: 100%;
+    background-color: rgb(67, 66, 65);
+    position: fixed;
+    z-index: 1;
+    
+    
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav ul{
+    float: right;
+}
+
+.nav a{
+    float:right;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid #ff0251;
+    color: #ff0251;
+    transition: .3s;
+    margin-right: 50px;
+}
+
+a:hover{
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+
+.background img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+}
+
+.viewings h1{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  text-decoration: underline;
+  
+}
+
+.viewings h2{
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.viewings p{
+  margin: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.viewings h1, h2 {
+  text-align: center;
+}
+
+.gaming p {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.viewing-container{
+  border: 1px solid; 
+  box-shadow: 5px 10px #888888;
+  border-radius: 10px;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 30px;
+  padding: 35px 0px;
+}
+
+.viewing-container h3{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.anime img{
+  height: 460px;
+  width: 340px;
+  border: 1px solid; 
+  border-radius: 10px;
+}
+
+.gaming h2{
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.games img{
+  height: 410px;
+  width: 285px;
+  border: 1px solid; 
+  border-radius: 10px;
+}
+
+.gaming-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 30px;
+  padding: 35px 0px;
+}
+
+.cosplay img{
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.cosplay h2{
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cosplay p{
+  margin: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+footer p {
+  text-align: center;
+  padding: 30px 30px;
+}
+
+@media only screen and (max-width: 1100px){
+ 
+  .anime img {
+    height: 390px;
+    width: 310px;
+}
+
+.games img {
+  height: 390px;
+  width: 310px;
+}
+
+} 
+
+@media only screen and (max-width: 1024px){
+
+  .gaming-container {
+  display: flex;
+  justify-content: space-evenly;
+  }
+  .anime img {
+    height: 360px;
+    width: 290px;
+}
+
+.games img {
+  height: 360px;
+  width: 290px;
+}
+
+}
+
+@media only screen and (max-width: 950px){
+.anime img {
+    height: 310px;
+    width: 270px;
+}
+
+.games img {
+  height: 310px;
+  width: 270px;
+}
+
+}
+
+@media only screen and (max-width: 900px){
+
+  .viewing-container {
+    display: grid;
+}
+
+.anime img {
+  height: auto;
+  width: 100%;
+}
+
+.gaming-container {
+  display: grid;
+}
+
+.games img {
+  height: auto;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 768px){
+
+  .nav{
+    width: 100%;
+    padding:0px;
+    margin: 0px;
+  }
+
+  .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    float: none;
+  }
+  
+  .background img{
+    width: 100%
+  }
+ 
+
+  .viewings p{
+    margin: 0px 30px;
+    margin-bottom: 30px;
+  }
+  
+ 
+
+  .games img{
+    width: 220px;
+  }
+
+  .gaming p{
+    margin: 0px 30px;
+  }
+  
+  .games img{
+    height: auto;
+    width: 100%;
+  }
+
+  .cosplay p{
+    margin: 0px 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 630px){
+  .nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px){
+
+  .background img{
+    display: none
+  }
+
+
+}
